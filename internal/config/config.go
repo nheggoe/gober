@@ -9,9 +9,6 @@ import (
 	"github.com/caarlos0/env/v11"
 )
 
-func init() {
-}
-
 type Config struct {
 	Daemon Daemon
 }
