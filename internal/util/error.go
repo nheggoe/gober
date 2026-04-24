@@ -40,3 +40,7 @@ func (es *Errors) Error() string {
 func (es *Errors) Unwrap() []error {
 	return *es
 }
+
+func (es *Errors) IsEmpty() bool {
+	return len(*es) == 0
+}
